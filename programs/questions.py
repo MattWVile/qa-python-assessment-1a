@@ -215,9 +215,14 @@ def six(input):
     # How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    pass
-
-
+    a = list(input)
+    vowels = ['a','e','i','o','u']
+    count = 0
+    for letter in a:
+        for vowel in vowels:
+            if vowel.lower() == letter.lower():
+                count += 1
+    return count
     # <QUESTION 8>
 
     # Write a function which takes an input (between 1 and 10 inclusive) and multiplies it by all the numbers before it.
