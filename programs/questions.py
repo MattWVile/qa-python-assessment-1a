@@ -34,6 +34,9 @@
 
     # What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
+from typing import Counter
+
+
 def one(input1, input2):
     if len(input1) == len(input2):
         return input1 + ' ' + input2
@@ -268,8 +271,14 @@ def eight(input):
     # Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-    pass
-
+    no_space = inputString.replace(' ', '')
+    letters = list(no_space)
+    count = 1
+    for letter in letters:
+        if letter == char:
+            return count
+        count += 1
+    return -1
 
     # <QUESTION 10>
 
