@@ -126,8 +126,13 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
+    # num_arr = arg1.split(' ')
+    # for num in num_arr:
+    #     new_num = list(num)
+    #     print(new_num)
+        # for number in new_num:
     pass
-
+    
 
     # <QUESTION 5>
 
@@ -155,8 +160,17 @@ def four(arg1):
     # help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def five(input):
-    pass
-
+    # spl_input = input.split(',')
+    # count = 0
+    # answer = []
+    # for word in spl_input:
+    #     if word[count] != word[-2]:
+    #         if word[count + 2] == 'False':
+    #             answer.append(word)
+    #     count += 1
+    # answer = list(dict(answer))
+    
+    return 'answer'
 
     # <QUESTION 6>
 
@@ -176,8 +190,15 @@ def five(input):
     # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 def six(input):
-    pass
-
+    a = list(input)
+    count = 0
+    for letter in a:
+        if letter == 'i' and a[count-1] == 'e' and a[count-2] == 'c':
+            return True
+        elif letter == 'e' and a[count-1] == 'i' and a[count-2] != 'c':
+            return True
+        count += 1
+    return False
 
     # <QUESTION 7>
 
