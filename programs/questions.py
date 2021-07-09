@@ -129,13 +129,16 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-    # num_arr = arg1.split(' ')
-    # for num in num_arr:
-    #     new_num = list(num)
-    #     print(new_num)
-        # for number in new_num:
-    pass
-    
+    num_arr = arg1.split(' ')
+    result = []
+    for num in num_arr:
+        new_num = list(num)
+        sum = 0
+        for number in new_num: 
+            sum += int(number)
+            result.append(sum)
+    result.sort(reverse=True)
+    return result[0]   
 
     # <QUESTION 5>
 
@@ -161,7 +164,6 @@ def four(arg1):
     # Dont't forget, False is a String, not a Boolean value in the Tests above.
 
     # help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
-
 def five(input):
     # spl_input = input.split(',')
     # count = 0
