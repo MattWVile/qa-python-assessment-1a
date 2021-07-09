@@ -239,8 +239,15 @@ def seven(input):
     # You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-    pass
-
+    count = 1
+    sum = 1
+    if input != 1: 
+        while count <= input:
+            sum *= count
+            count += 1
+    else:
+        sum = 1
+    return sum
 
     # <QUESTION 9>
 
