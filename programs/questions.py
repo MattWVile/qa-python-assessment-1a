@@ -66,7 +66,11 @@ def one(input1, input2):
     # Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def two(input):
-    pass
+    result = list(input.lower().split('bert'))
+    if len(result) <= 2:
+        return ''
+    else:
+        return result[1]
 
 
     # <QUESTION 3>
@@ -89,7 +93,14 @@ def two(input):
     # No Hints for this question
 
 def three(arg1):
-    pass
+    if arg1 % 3 == 0:
+        return 'fizz'
+    elif arg1 % 5 == 0:
+        return 'buzz'
+    elif arg1 % 3 == 0 and arg1 % 5 == 0:
+        return 'fizzbuzz'
+    else:
+        return 'null'
 
 
     # <QUESTION 4>
